@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AC629FA32ADD744200E43F82 /* ScrumsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC629FA22ADD744200E43F82 /* ScrumsView.swift */; };
 		ACC01DB52AD92A93008DACAB /* NewScrumdingerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACC01DB42AD92A93008DACAB /* NewScrumdingerApp.swift */; };
 		ACC01DB72AD92A93008DACAB /* MeetingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACC01DB62AD92A93008DACAB /* MeetingView.swift */; };
 		ACC01DB92AD92A94008DACAB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ACC01DB82AD92A94008DACAB /* Assets.xcassets */; };
@@ -18,6 +19,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		AC629FA22ADD744200E43F82 /* ScrumsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrumsView.swift; sourceTree = "<group>"; };
 		ACC01DB12AD92A93008DACAB /* NewScrumdinger.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NewScrumdinger.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ACC01DB42AD92A93008DACAB /* NewScrumdingerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewScrumdingerApp.swift; sourceTree = "<group>"; };
 		ACC01DB62AD92A93008DACAB /* MeetingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeetingView.swift; sourceTree = "<group>"; };
@@ -63,6 +65,7 @@
 				ACC01DB42AD92A93008DACAB /* NewScrumdingerApp.swift */,
 				ACC01DC72AD93D34008DACAB /* CardView.swift */,
 				ACC01DB62AD92A93008DACAB /* MeetingView.swift */,
+				AC629FA22ADD744200E43F82 /* ScrumsView.swift */,
 				ACC01DC92AD94175008DACAB /* TrailingIconLabelStyle.swift */,
 				ACC01DB82AD92A94008DACAB /* Assets.xcassets */,
 				ACC01DBA2AD92A94008DACAB /* Preview Content */,
@@ -160,6 +163,7 @@
 				ACC01DC62AD93C98008DACAB /* DailyScrum.swift in Sources */,
 				ACC01DCA2AD94175008DACAB /* TrailingIconLabelStyle.swift in Sources */,
 				ACC01DC42AD93BF5008DACAB /* Theme.swift in Sources */,
+				AC629FA32ADD744200E43F82 /* ScrumsView.swift in Sources */,
 				ACC01DB72AD92A93008DACAB /* MeetingView.swift in Sources */,
 				ACC01DB52AD92A93008DACAB /* NewScrumdingerApp.swift in Sources */,
 				ACC01DC82AD93D34008DACAB /* CardView.swift in Sources */,

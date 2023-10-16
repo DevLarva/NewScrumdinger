@@ -8,11 +8,20 @@
 import Foundation
 
 
-struct DailyScrum {  //구조체 생성
+struct DailyScrum: Identifiable {  //구조체 생성
+    let id: UUID
     var title: String
     var attendees: [String]
     var lengthInMinutes: Int
     var theme: Theme
+    
+    init(id: UUID = UUID(), title: String, attendees: [String], lengthInMinutes: Int, theme: Theme) {   //id속성에 기본값을 할당하는 초기화 작업
+          self.id = id
+          self.title = title
+          self.attendees = attendees
+          self.lengthInMinutes = lengthInMinutes
+          self.theme = theme
+      }
 }
 
 
