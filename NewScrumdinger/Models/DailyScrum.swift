@@ -13,6 +13,14 @@ struct DailyScrum: Identifiable {  //구조체 생성
     var title: String
     var attendees: [Attendee]
     var lengthInMinutes: Int
+    var lengthInMinutesAsDouble: Double {
+        get {
+            Double(lengthInMinutes)     //슬라이더로 변경된 값을 Double로 변경
+        }
+        set {
+            lengthInMinutes = Int(newValue) //새로운 값으로 업데이트
+        }
+    }
     var theme: Theme
     
     init(id: UUID = UUID(), title: String, attendees: [String], lengthInMinutes: Int, theme: Theme) {   //id속성에 기본값을 할당하는 초기화 작업
@@ -33,6 +41,9 @@ extension DailyScrum {
             self.id = id
             self.name = name
         }
+    }
+    static var emptyScrum: DailyScrum {
+        DailyScrum(title: "", attendees: [], lengthInMinutes: 5, theme: .sky)
     }
 }
 extension DailyScrum {
