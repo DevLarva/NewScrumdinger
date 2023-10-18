@@ -8,8 +8,9 @@
 import SwiftUI
 
 struct DetailEditView: View {
-    @State private var scrum = DailyScrum.emptyScrum  //private로 해당 뷰 내에서만 사용
+    //@State private var scrum = DailyScrum.emptyScrum  //private로 해당 뷰 내에서만 사용, 아래 바인딩으로 변경
     @State private var newAttendeeName = ""
+    @Binding var scrum: DailyScrum
     var body: some View {
         Form {
             Section(header: Text("Meeting Info")) {
@@ -24,6 +25,8 @@ struct DetailEditView: View {
                     Text("\(scrum.lengthInMinutes) minutes")
                         .accessibilityHidden(true)
                 }
+                ThemePicker(selection: $scrum.theme)
+                    .frame(width: 300, height: 150)
             }
             Section(header: Text("Attendees")) {
                 ForEach(scrum.attendees) { attendee in
@@ -52,5 +55,5 @@ struct DetailEditView: View {
 }
 
 #Preview {
-    DetailEditView()
+    DetailEditView(scrum: .constant(DailyScrum.sampleData[0]))
 }
