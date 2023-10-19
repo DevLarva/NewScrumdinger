@@ -13,6 +13,7 @@
 		AC9702F12ADF9EF40034ABA1 /* ThemeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC9702F02ADF9EF40034ABA1 /* ThemeView.swift */; };
 		AC9702F32ADFA0380034ABA1 /* ThemePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC9702F22ADFA0380034ABA1 /* ThemePicker.swift */; };
 		ACA5AEC12AE1009900BC4926 /* observable.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACA5AEC02AE1009900BC4926 /* observable.swift */; };
+		ACA5AEC32AE11AB200BC4926 /* Life Cycle.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACA5AEC22AE11AB200BC4926 /* Life Cycle.swift */; };
 		ACC01DB52AD92A93008DACAB /* NewScrumdingerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACC01DB42AD92A93008DACAB /* NewScrumdingerApp.swift */; };
 		ACC01DB72AD92A93008DACAB /* MeetingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACC01DB62AD92A93008DACAB /* MeetingView.swift */; };
 		ACC01DB92AD92A94008DACAB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ACC01DB82AD92A94008DACAB /* Assets.xcassets */; };
@@ -30,6 +31,7 @@
 		AC9702F02ADF9EF40034ABA1 /* ThemeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThemeView.swift; sourceTree = "<group>"; };
 		AC9702F22ADFA0380034ABA1 /* ThemePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThemePicker.swift; sourceTree = "<group>"; };
 		ACA5AEC02AE1009900BC4926 /* observable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = observable.swift; sourceTree = "<group>"; };
+		ACA5AEC22AE11AB200BC4926 /* Life Cycle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Life Cycle.swift"; sourceTree = "<group>"; };
 		ACC01DB12AD92A93008DACAB /* NewScrumdinger.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NewScrumdinger.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ACC01DB42AD92A93008DACAB /* NewScrumdingerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewScrumdingerApp.swift; sourceTree = "<group>"; };
 		ACC01DB62AD92A93008DACAB /* MeetingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeetingView.swift; sourceTree = "<group>"; };
@@ -56,6 +58,7 @@
 			isa = PBXGroup;
 			children = (
 				ACA5AEC02AE1009900BC4926 /* observable.swift */,
+				ACA5AEC22AE11AB200BC4926 /* Life Cycle.swift */,
 			);
 			path = Document;
 			sourceTree = "<group>";
@@ -186,6 +189,7 @@
 				AC9702F32ADFA0380034ABA1 /* ThemePicker.swift in Sources */,
 				ACC01DC62AD93C98008DACAB /* DailyScrum.swift in Sources */,
 				AC629FA52ADD7CEC00E43F82 /* DetailView.swift in Sources */,
+				ACA5AEC32AE11AB200BC4926 /* Life Cycle.swift in Sources */,
 				AC46E58C2ADE47B8007780F5 /* DetailEditView.swift in Sources */,
 				ACC01DCA2AD94175008DACAB /* TrailingIconLabelStyle.swift in Sources */,
 				ACC01DC42AD93BF5008DACAB /* Theme.swift in Sources */,
