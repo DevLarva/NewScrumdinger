@@ -46,7 +46,7 @@ struct CardView_Previews: PreviewProvider {
 
 // MARK: - 조사
 
-/*
+/**
  - accessibilityAddTraits
 어떤 특성인지를 설명해준다. 뷰면 뷰, 라벨이면 라벨 텍스트면 텍스트 이런식으로!
 우리가 흔히 사용하는 accessibility 느낌으로 비슷하다고 생각하면 된다!!
