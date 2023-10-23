@@ -29,17 +29,27 @@ struct MeetingView: View {
         .padding()
         .foregroundColor(scrum.theme.accentColor)
         .onAppear { ///onAppear 모디파이어로 회의 길이와 참석자 수를 전달
-            scrumTimer.reset(lengthInMinutes: scrum.lengthInMinutes, attendees: scrum.attendees)
-            scrumTimer.speakerChangedAction = {
-                player.seek(to: .zero)
-                player.play()
-            }
-            scrumTimer.startScrum()
+           startScrum()
         }
         .onDisappear { ///onAppear 모디파이어로 타이머 멈추는 stopScrum 호출
-            scrumTimer.stopScrum()
+           endScrum()
         }
         .navigationBarTitleDisplayMode(.inline)
+    }
+    
+    private func startScrum() { ///원래 onAppear 내부에 있던걸 새롭게 함수로 만들어서 이동해줌
+        scrumTimer.reset(lengthInMinutes: scrum.lengthInMinutes, attendees: scrum.attendees)
+        scrumTimer.speakerChangedAction = {
+            player.seek(to: .zero)
+            player.play()
+        }
+        scrumTimer.startScrum()
+    }
+    
+    private func endScrum() {   ///위 함수와 동일한 맥락
+        scrumTimer.stopScrum()
+        let newHistory = History(attendees: scrum.attendees)
+        scrum.history.insert(newHistory, at: 0)
     }
 }
 

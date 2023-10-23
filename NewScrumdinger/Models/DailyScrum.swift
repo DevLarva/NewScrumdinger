@@ -22,6 +22,7 @@ struct DailyScrum: Identifiable {  //구조체 생성
         }
     }
     var theme: Theme
+    var history: [History] = []
     
     init(id: UUID = UUID(), title: String, attendees: [String], lengthInMinutes: Int, theme: Theme) {   //id속성에 기본값을 할당하는 초기화 작업
         self.id = id
