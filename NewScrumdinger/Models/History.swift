@@ -8,7 +8,7 @@
 import Foundation
 
 
-struct History: Identifiable {  ///스크럼 세션의 필수 세부 정보를 저장하는 속성들
+struct History: Identifiable, Codable {  ///스크럼 세션의 필수 세부 정보를 저장하는 속성들
     let id: UUID
     let date: Date
     var attendees: [DailyScrum.Attendee]

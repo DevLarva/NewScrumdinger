@@ -8,7 +8,7 @@
 import Foundation
 
 
-struct DailyScrum: Identifiable {  //구조체 생성
+struct DailyScrum: Identifiable, Codable {  //구조체 생성
     let id: UUID
     var title: String
     var attendees: [Attendee]
@@ -34,7 +34,7 @@ struct DailyScrum: Identifiable {  //구조체 생성
 }
 
 extension DailyScrum {
-    struct Attendee: Identifiable {
+    struct Attendee: Identifiable, Codable {
         let id: UUID
         var name: String
         

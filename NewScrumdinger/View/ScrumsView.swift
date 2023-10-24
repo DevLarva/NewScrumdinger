@@ -10,6 +10,8 @@ import SwiftUI
 struct ScrumsView: View {
     @Binding var scrums: [DailyScrum]
     @State private var isPresentingNewScrumView = false
+    @Environment(\.scenePhase) private var scenePhase
+    let saveAction: ()->Void
     
     var body: some View {
         NavigationStack {
@@ -32,9 +34,20 @@ struct ScrumsView: View {
         .sheet(isPresented: $isPresentingNewScrumView) {
             NewScrumSheet(scrums: $scrums, isPresentiongNewScrumView: $isPresentingNewScrumView)
         }
+        .onChange(of: scenePhase) { phase in
+            if phase == .inactive { saveAction() }  /// 장면이 비활성 상태일때 saveActoin 을 호출
+            
+        }
     }
 }
 
 #Preview {
-    ScrumsView(scrums: .constant(DailyScrum.sampleData))
+    ScrumsView(scrums: .constant(DailyScrum.sampleData), saveAction: {})
 }
+
+
+
+/**
+ scenePhase란? 무엇인고?
+ 
+ */
