@@ -31,6 +31,8 @@
 		ACC01DC82AD93D34008DACAB /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACC01DC72AD93D34008DACAB /* CardView.swift */; };
 		ACC01DCA2AD94175008DACAB /* TrailingIconLabelStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACC01DC92AD94175008DACAB /* TrailingIconLabelStyle.swift */; };
 		ACC3FDA12AE8D514009B0108 /* deployment target .swift in Sources */ = {isa = PBXBuildFile; fileRef = ACC3FDA02AE8D514009B0108 /* deployment target .swift */; };
+		ACC3FDA32AE8DA4D009B0108 /* ErrorWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACC3FDA22AE8DA4D009B0108 /* ErrorWrapper.swift */; };
+		ACC3FDA52AE8DAA3009B0108 /* ErrorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACC3FDA42AE8DAA3009B0108 /* ErrorView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -59,6 +61,8 @@
 		ACC01DC72AD93D34008DACAB /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
 		ACC01DC92AD94175008DACAB /* TrailingIconLabelStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrailingIconLabelStyle.swift; sourceTree = "<group>"; };
 		ACC3FDA02AE8D514009B0108 /* deployment target .swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "deployment target .swift"; sourceTree = "<group>"; };
+		ACC3FDA22AE8DA4D009B0108 /* ErrorWrapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorWrapper.swift; sourceTree = "<group>"; };
+		ACC3FDA42AE8DAA3009B0108 /* ErrorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -93,6 +97,7 @@
 				AC9702F02ADF9EF40034ABA1 /* ThemeView.swift */,
 				AC9702F22ADFA0380034ABA1 /* ThemePicker.swift */,
 				ACC01DC92AD94175008DACAB /* TrailingIconLabelStyle.swift */,
+				ACC3FDA42AE8DAA3009B0108 /* ErrorView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -163,6 +168,7 @@
 				ACA5AEC82AE2622200BC4926 /* ScrumTimer.swift */,
 				ACA617912AE63BD9001DA5E3 /* History.swift */,
 				AC0FE4D12AE7A41100DA3F0A /* ScrumStore.swift */,
+				ACC3FDA22AE8DA4D009B0108 /* ErrorWrapper.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -244,6 +250,7 @@
 				AC46E58C2ADE47B8007780F5 /* DetailEditView.swift in Sources */,
 				ACC01DCA2AD94175008DACAB /* TrailingIconLabelStyle.swift in Sources */,
 				ACA5AEC92AE2622200BC4926 /* ScrumTimer.swift in Sources */,
+				ACC3FDA52AE8DAA3009B0108 /* ErrorView.swift in Sources */,
 				ACA617902AE6382B001DA5E3 /* NewScrumSheet.swift in Sources */,
 				ACA5AECD2AE2707A00BC4926 /* AVPlayer+Ding.swift in Sources */,
 				ACC01DC42AD93BF5008DACAB /* Theme.swift in Sources */,
@@ -254,6 +261,7 @@
 				ACA5AECB2AE26C2300BC4926 /* MeetingFooterView.swift in Sources */,
 				ACA617922AE63BD9001DA5E3 /* History.swift in Sources */,
 				ACC01DB72AD92A93008DACAB /* MeetingView.swift in Sources */,
+				ACC3FDA32AE8DA4D009B0108 /* ErrorWrapper.swift in Sources */,
 				ACA5AEC12AE1009900BC4926 /* observable.swift in Sources */,
 				ACC01DB52AD92A93008DACAB /* NewScrumdingerApp.swift in Sources */,
 				AC9702F12ADF9EF40034ABA1 /* ThemeView.swift in Sources */,
