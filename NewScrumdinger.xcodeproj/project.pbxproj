@@ -30,6 +30,7 @@
 		ACC01DC62AD93C98008DACAB /* DailyScrum.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACC01DC52AD93C98008DACAB /* DailyScrum.swift */; };
 		ACC01DC82AD93D34008DACAB /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACC01DC72AD93D34008DACAB /* CardView.swift */; };
 		ACC01DCA2AD94175008DACAB /* TrailingIconLabelStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACC01DC92AD94175008DACAB /* TrailingIconLabelStyle.swift */; };
+		ACC3FDA12AE8D514009B0108 /* deployment target .swift in Sources */ = {isa = PBXBuildFile; fileRef = ACC3FDA02AE8D514009B0108 /* deployment target .swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -57,6 +58,7 @@
 		ACC01DC52AD93C98008DACAB /* DailyScrum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyScrum.swift; sourceTree = "<group>"; };
 		ACC01DC72AD93D34008DACAB /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
 		ACC01DC92AD94175008DACAB /* TrailingIconLabelStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrailingIconLabelStyle.swift; sourceTree = "<group>"; };
+		ACC3FDA02AE8D514009B0108 /* deployment target .swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "deployment target .swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -75,6 +77,7 @@
 			children = (
 				ACA5AEC02AE1009900BC4926 /* observable.swift */,
 				ACA5AEC22AE11AB200BC4926 /* Life Cycle.swift */,
+				ACC3FDA02AE8D514009B0108 /* deployment target .swift */,
 			);
 			path = Document;
 			sourceTree = "<group>";
@@ -247,6 +250,7 @@
 				ACA5AEC52AE25EAC00BC4926 /* MeetingHeaderView.swift in Sources */,
 				ACA5AEC72AE2618000BC4926 /* ScrumProgressViewStyle.swift in Sources */,
 				AC629FA32ADD744200E43F82 /* ScrumsView.swift in Sources */,
+				ACC3FDA12AE8D514009B0108 /* deployment target .swift in Sources */,
 				ACA5AECB2AE26C2300BC4926 /* MeetingFooterView.swift in Sources */,
 				ACA617922AE63BD9001DA5E3 /* History.swift in Sources */,
 				ACC01DB72AD92A93008DACAB /* MeetingView.swift in Sources */,
