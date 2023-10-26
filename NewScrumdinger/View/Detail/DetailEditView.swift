@@ -9,8 +9,9 @@ import SwiftUI
 
 struct DetailEditView: View {
     //@State private var scrum = DailyScrum.emptyScrum  //private로 해당 뷰 내에서만 사용, 아래 바인딩으로 변경
-    @State private var newAttendeeName = ""
     @Binding var scrum: DailyScrum
+    @State private var newAttendeeName = ""
+    
     var body: some View {
         Form {
             Section(header: Text("Meeting Info")) {

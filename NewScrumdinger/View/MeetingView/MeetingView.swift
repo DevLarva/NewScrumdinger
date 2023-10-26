@@ -12,17 +12,14 @@ struct MeetingView: View {
     @Binding var scrum: DailyScrum
     @StateObject var scrumTimer = ScrumTimer()
     
-    private var player: AVPlayer { AVPlayer.sharedDingPlayer}
+    private var player: AVPlayer { AVPlayer.sharedDingPlayer }
     var body: some View {
         ZStack {
             RoundedRectangle(cornerRadius: 16)
                 .fill(scrum.theme.mainColor)
             VStack {
                 MeetingHeaderView(secondsElapsed: scrumTimer.secondsElapsed, secondsRemaining: scrumTimer.secondsRemaining, theme: scrum.theme)
-                
-                Circle()
-                    .strokeBorder(lineWidth: 24) // 테두리 추가
-                
+                MeetingTimerView(speakers: scrumTimer.speakers, theme: scrum.theme)
                 MeetingFooterView(speakers: scrumTimer.speakers, skipAction: scrumTimer.skipSpeaker)
             }
         }
