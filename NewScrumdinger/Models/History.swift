@@ -12,10 +12,12 @@ struct History: Identifiable, Codable {  ///스크럼 세션의 필수 세부 �
     let id: UUID
     let date: Date
     var attendees: [DailyScrum.Attendee]
+    var transcript: String?
     
-    init(id: UUID = UUID(), date: Date = Date(), attendees: [DailyScrum.Attendee]) {  ///기본 매개변수를 초기화
-        self.id = id
-        self.date = date
-        self.attendees = attendees
+    init(id: UUID = UUID(), date: Date = Date(), attendees: [DailyScrum.Attendee], transcript: String? = nil) {
+            self.id = id
+            self.date = date
+            self.attendees = attendees
+            self.transcript = transcript
+        }
     }
-}
